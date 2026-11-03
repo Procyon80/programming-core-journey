@@ -7,5 +7,5 @@ CREATE TABLE IF NOT EXISTS users (
 );
 
 -- Seed some data
-INSERT INTO users (name, email) VALUES ('Alice', 'alice@example.com');
-INSERT INTO users (name, email) VALUES ('Bob', 'bob@example.com');
+INSERT OR IGNORE INTO users (name, email) VALUES ('Alice', 'alice@example.com');
+INSERT OR IGNORE INTO users (name, email) VALUES ('Bob', 'bob@example.com');
